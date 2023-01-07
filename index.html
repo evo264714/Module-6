@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo</title>
+    <style>
+        h1 {
+            color: royalblue;
+        }
+
+        h1:hover {
+            color: skyblue;
+            background-color: seagreen;
+            font-weight: 900;
+
+            font-size: 50px;
+        }
+
+        .middle:focus {
+            color: blue;
+            font-weight: 700;
+        }
+
+        a:visited {
+            color: brown;
+        }
+
+        li:first-child {
+            color: chocolate;
+        }
+        li:last-child{
+            background-color: blue;
+            color: red;
+        }
+        li:nth-child(2n){
+            color: blueviolet;
+        }
+        li:nth-child(2n+1){
+            background-color: darkcyan;
+        }
+        h3::before{
+            content: 'Hello ';
+        }
+        h3::after{
+             content: ' Bye'
+        }
+    </style>
+</head>
+
+<body>
+    <h1>This is normal</h1>
+    <input type="text">
+    <input class="middle" type="text">
+    <input type="text">
+    <br>
+    <a href="https://www.google.com/">Google</a>
+    <a href="https://web.programming-hero.com/dashboard">Programming Hero</a>
+    <a
+        href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwjv19eq47X8AhWXJCsKHY0xBTYYABABGgJzZg&ohost=www.google.com&cid=CAESbeD2tSjWTRM2S1RA45x3yCerExqbT1N6ncnGIJP0vBcxzl8YMF6ymS84aVpPj5tS4aMh-P7WmKD-6TU6RyDWBjxXnOlixAs-8dF--P0rx2gepWwhXU-cLnPYnDqbHp9Vyz8PzZHOSS0qpzFdj_Q&sig=AOD64_3goDOtrGcmMUsiGQJpYCW574FsOQ&q&adurl&ved=2ahUKEwjpoc-q47X8AhWcUWwGHQiDCDIQ0Qx6BAgMEAE">Never
+        visited</a>
+    <br>
+    <h3>middle size header -1</h3>
+    <h3>middle size header -2</h3>
+    <h3>middle size header -3</h3>
+    <h3>middle size header -4</h3>
+    <h3>middle size header -5</h3>
+    <h3>middle size header -6</h3>
+    <ul>
+        <li>Messi</li>
+        <li>Ronaldo</li>
+        <li>Neymar</li>
+        <li>Suarez</li>
+        <li>Mbappe</li>
+        <li>Griezman</li>
+        <li>Ozil</li>
+        <li>Pedri</li>
+        <li>Xavi</li>
+    </ul>
+
+</body>
+
+</html>
